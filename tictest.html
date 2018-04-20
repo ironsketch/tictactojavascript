@@ -1,0 +1,43 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+<div id="tictactoe"><center>
+<p id="ins">Click to play X or O</p>
+<br />
+<img onclick="setPlayer('x')" src="bigx.png" id="ex" class="" />  <img onclick="setPlayer('o')" src="bigo.png"
+id="oh" /></center></div>
+
+<table id="maintic" width="300px" height="300px" background="ticta.png" class="tikky">
+  <tr>
+    
+    <td><p id="td1" onclick="xify(this)"></p></td>
+    <td><p id="td2" onclick="xify(this)"></p></td>
+    <td><p id="td3" onclick="xify(this)"></p></td>
+  </tr>
+  <tr>
+    
+    <td><p id="td4" onclick="xify(this)"></p></td>
+    <td><p id="td5" onclick="xify(this)"></p></td>
+    <td><p id="td6" onclick="xify(this)"></p></td>
+  </tr>
+  <tr>
+    
+    <td><p id="td7" onclick="xify(this)"></p></td>
+    <td><p id="td8" onclick="xify(this)"></p></td>
+    <td><p id="td9" onclick="xify(this)"></p></td>
+  </tr>
+</table>
+<p id="win"></p>
+<p id="tdtest"></p>
+<p id="test"></p>
+
+
+</center>
+<script src="third.js">
+</script>
+</body>
+</html>

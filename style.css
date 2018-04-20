@@ -1,0 +1,67 @@
+/* .enlarge {
+-webkit-animation-name: sizechange;
+-webkit-animation-duration: 2s;
+animation-name: sizechange;
+animation-duration: 2s;
+-webkit-animation-timing-function: linear;
+animation-fill-mode: initial;
+}
+
+@-webkit-keyframes sizechange {
+33% {transform: scale(1.1);}
+66% {transform: scale(1.5);
+opacity: 0.4;}
+100% {transform: scale(2);
+opacity: 0.1;}
+}
+@keyframes sizechange {
+33% {transform: scale(1.1);}
+66% {transform: scale(1.5);
+opacity: 0.4;}
+100% {transform: scale(2);
+opacity: 0.1;}
+} */
+.enlarge {
+-webkit-animation:scaleme 1s;
+}    
+@-webkit-keyframes scaleme {
+  0% { -webkit-transform: scale(1); opacity: 1; }
+  100% { -webkit-transform: scale(3); opacity: 0;display:none; }
+}      
+
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.tikky {
+    padding-left:30px;
+    z-index:-1;
+    position: fixed;
+    top: 10px;
+    left:40%;
+}
+.tikkychange {
+    top: 10px;
+    padding-left:30px;
+    position: fixed;
+    z-index:100;
+    left:40%;
+    
+}
+#tictactoe{
+    background-color: #ffffff;
+    height: 500px;
+}
+#ins {
+    width: 150px;
+    background-color: #ffffff;
+}
+
+.wins {
+    top: 10px;
+    position: fixed;
+    z-index:150;
+    left:30%;
+    background-color: #ffffff;
+}

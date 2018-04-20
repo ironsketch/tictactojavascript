@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+
+
+
+.enlarge {
+-webkit-animation-name: sizechange;
+-webkit-animation-duration: 2s;
+animation-name: sizechange;
+animation-duration: 2s;
+-webkit-animation-timing-function: linear;
+animation-fill-mode: initial;
+}
+
+@-webkit-keyframes sizechange {
+33% {transform: scale(1.1);}
+66% {transform: scale(1.5);
+opacity: 0.4;}
+100% {transform: scale(2);
+opacity: 0.1;}
+}
+@keyframes sizechange {
+33% {transform: scale(1.1);}
+66% {transform: scale(1.5);
+opacity: 0.4;}
+100% {transform: scale(2);
+opacity: 0.1;}
+}
+
+.center {
+margin-left: auto;
+margin-right: auto;
+}
+
+
+</style>
+</head>
+<body>
+<div class="center"><p class="center"><img src="bigx.png" class="enlarge"></p></div>
+</body>
+</html>
